@@ -3,8 +3,8 @@ let boardWidth = 800;
 let boardHeight = 600;
 let context;
 
-let fishWidth = 60;
-let fishHeight = 60;
+let fishWidth = 42;
+let fishHeight = 32;
 let fishX = boardWidth/8;
 let fishY = boardHeight/2;
 
@@ -134,7 +134,7 @@ function moveFish(e) {
     velocityY = -10;
 
     if (gameOver) {
-      fishy.y = fishY;
+      fish.y = fishY;
       pipeArray = [];
       score = 0;
       gameOver = false;
